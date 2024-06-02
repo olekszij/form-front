@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --primary-color: #000000;
+  --border-color: rgb(12, 250, 170);
+
+  --transition: all 0.3s linear;
+}
 * {
   box-sizing: border-box;
 }
@@ -38,16 +44,30 @@ form {
   margin: 50px;
   padding: 20px;
 }
-input {
-  margin-bottom: 10px;
+input,
+textarea {
+  margin: 5px 0 5px 0;
   height: 30px;
   width: 100%;
+  border-radius: 7px;
+  border: 1px solid white;
+  padding: 15px 5px;
+  box-shadow: 3px 3px black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition-duration: 0.4s;
 }
-input:focus {
-  background: hwb(140 15% 4% / 0.191);
-  padding: 20px;
-  font-size: 1.2rem;
+input:focus,
+textarea:focus {
+  padding: 15px 5px;
+  outline: none;
+  border: 1px solid #aed8e5;
 }
+textarea {
+  margin-bottom: 10px;
+  height: 100px;
+  width: 100%;
+}
+
 button[type='submit'] {
   background-color: #000000;
   border: none;
