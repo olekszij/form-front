@@ -90,3 +90,8 @@ label {
 textarea {
   width: 100%;
 }
+
+@media (max-width: 900px) {
+.box div {
+width : 300px;
+} 
