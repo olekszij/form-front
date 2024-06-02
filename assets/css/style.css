@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --primary-color: #000000;
-  --border-color: rgb(12, 250, 170);
-
-  --transition: all 0.3s linear;
-}
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: lightblue;
+  background-color: aquamarine;
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
 }
@@ -60,7 +54,7 @@ input:focus,
 textarea:focus {
   padding: 15px 5px;
   outline: none;
-  border: 1px solid #aed8e5;
+  border: 1px solid aquamarine;
 }
 textarea {
   margin-bottom: 10px;
@@ -81,6 +75,7 @@ button[type='submit'] {
   margin-top: 30px;
   box-shadow: 3px 3px black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition-duration: 0.4s;
 }
 
 button[type='submit']:hover {
