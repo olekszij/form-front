@@ -16,7 +16,10 @@ $.querySelector('#fromForm').addEventListener('submit', async (e) => {
   };
   console.log(data);
   try {
-    const response = await axios.post('http://localhost:3000/form', data);
+    const response = await axios.post(
+      'https://site--form-backend--gfbrddh2d54z.code.run/form',
+      data
+    );
 
     console.log('form submitting success', response.data);
     alert('Form submitted successfully');
